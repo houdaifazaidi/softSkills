@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Carte de compétences Soft Skills – Un parcours progressif de Soi à Vision.">
+  <title>Soft Skills</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="site-wrapper">
+
+  <!-- Header -->
+  <header class="site-header">
+    <a class="site-logo" href="index.html">
+      <span class="logo-icon">SS</span>
+      <span data-i18n="site_title">Soft Skills</span>
+    </a>
+    <div class="header-right">
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')">FR</button>
+        <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" data-lang="ar" onclick="setLanguage('ar')">AR</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <!-- Main -->
+    <main class="main-content">
+      <nav class="breadcrumb" id="breadcrumb"></nav>
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-label" data-i18n="hero_label">Carte de compétences</div>
+        <h1 data-i18n="hero_title">Soft Skills</h1>
+        <p data-i18n="hero_desc">Un parcours d'apprentissage progressif qui vous guide de la connaissance de soi jusqu'à la pensée stratégique.</p>
+        <div>
+          <div style="font-size:.82rem;color:rgba(255,255,255,.55);margin-bottom:12px;font-weight:600;text-transform:uppercase;letter-spacing:.8px" data-i18n="progression_title">Le modèle de progression :</div>
+          <div class="progression">
+            <span class="progression-step">🧠 <span data-i18n="step1">Soi</span></span>
+            <span class="progression-arrow">→</span>
+            <span class="progression-step">🤝 <span data-i18n="step2">Relation</span></span>
+            <span class="progression-arrow">→</span>
+            <span class="progression-step">⚡ <span data-i18n="step3">Action</span></span>
+            <span class="progression-arrow">→</span>
+            <span class="progression-step">🌟 <span data-i18n="step4">Influence</span></span>
+            <span class="progression-arrow">→</span>
+            <span class="progression-step">🔭 <span data-i18n="step5">Vision</span></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5 Section Cards -->
+      <div class="cards-section-title" data-i18n="sections_title">Les 5 dimensions</div>
+      <div class="cards-grid cards-grid-lg">
+
+        <a class="section-card s1" href="maitrise-de-soi.html">
+          <div class="card-icon">🧠</div>
+          <div class="card-step" data-i18n="step_label1">Étape 1 · Soi</div>
+          <h3 data-i18n="section1">Maîtrise de soi</h3>
+          <p data-i18n="section1_desc">Développer la conscience de soi, la maîtrise émotionnelle et l'équilibre personnel.</p>
+          <span class="card-arrow" data-i18n="explore">Explorer →</span>
+        </a>
+
+        <a class="section-card s2" href="communication-relations.html">
+          <div class="card-icon">🤝</div>
+          <div class="card-step" data-i18n="step_label2">Étape 2 · Relation</div>
+          <h3 data-i18n="section2">Communication et relations</h3>
+          <p data-i18n="section2_desc">Compétences nécessaires pour interagir efficacement avec les autres.</p>
+          <span class="card-arrow" data-i18n="explore">Explorer →</span>
+        </a>
+
+        <a class="section-card s3" href="performance-professionnelle.html">
+          <div class="card-icon">⚡</div>
+          <div class="card-step" data-i18n="step_label3">Étape 3 · Action</div>
+          <h3 data-i18n="section3">Performance professionnelle</h3>
+          <p data-i18n="section3_desc">Productivité, discipline et efficacité professionnelle.</p>
+          <span class="card-arrow" data-i18n="explore">Explorer →</span>
+        </a>
+
+        <a class="section-card s4" href="leadership-influence.html">
+          <div class="card-icon">🌟</div>
+          <div class="card-step" data-i18n="step_label4">Étape 4 · Influence</div>
+          <h3 data-i18n="section4">Leadership et influence</h3>
+          <p data-i18n="section4_desc">La capacité à guider, motiver et influencer les équipes.</p>
+          <span class="card-arrow" data-i18n="explore">Explorer →</span>
+        </a>
+
+        <a class="section-card s5" href="pensee-strategique.html">
+          <div class="card-icon">🔭</div>
+          <div class="card-step" data-i18n="step_label5">Étape 5 · Vision</div>
+          <h3 data-i18n="section5">Pensée stratégique</h3>
+          <p data-i18n="section5_desc">Méthodes de réflexion pour résoudre les problèmes et prendre des décisions.</p>
+          <span class="card-arrow" data-i18n="explore">Explorer →</span>
+        </a>
+
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="i18n.js"></script>
+<script src="nav.js"></script>
+<script>
+  initPage({
+    currentPage: 'index',
+    breadcrumbs: [{ key: 'home', href: 'index.html' }]
+  });
+</script>
+</body>
+</html>

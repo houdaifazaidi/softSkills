@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Résolution des problèmes – 6 chapeaux, 5S, prise de décision.">
+  <title>Résolution des problèmes – Soft Skills</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="site-wrapper">
+  <header class="site-header">
+    <a class="site-logo" href="index.html"><span class="logo-icon">SS</span><span data-i18n="site_title">Soft Skills</span></a>
+    <div class="header-right">
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')">FR</button>
+        <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" data-lang="ar" onclick="setLanguage('ar')">AR</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="main-content">
+      <nav class="breadcrumb" id="breadcrumb"></nav>
+      <section class="section-hero hero-c5">
+        <div class="section-hero-icon">🧩</div>
+        <div class="section-hero-body">
+          <div class="section-badge" data-i18n="s5_badge">Étape 5 · Vision</div>
+          <h1 data-i18n="sub5_1">Résolution des problèmes</h1>
+          <p data-i18n="sub5_1_desc">Méthode des 6 chapeaux de pensée, méthode 5S, prise de décision.</p>
+        </div>
+      </section>
+      <div class="block-title" data-i18n="subtopics_title">Sujets couverts</div>
+      <div class="topic-list">
+        <div class="topic-item"><span class="topic-icon ti-c5">🎩</span><span class="topic-num">01</span><span data-i18n="l5_1_1">Méthode des 6 chapeaux de pensée</span></div>
+        <div class="topic-item"><span class="topic-icon ti-c5">5️⃣</span><span class="topic-num">02</span><span data-i18n="l5_1_2">Méthode 5S</span></div>
+        <div class="topic-item"><span class="topic-icon ti-c5">⚖️</span><span class="topic-num">03</span><span data-i18n="l5_1_3">Prise de décision</span></div>
+      </div>
+      <div class="divider"></div>
+      <div class="block-title" data-i18n="related_title">Sujets connexes</div>
+      <div class="related-grid">
+        <a class="related-link" href="pensee-strategique.html">🔭 <span data-i18n="section5">Pensée stratégique</span></a>
+        <a class="related-link" href="gestion-financiere.html">💰 <span data-i18n="sub5_2">Gestion financière</span></a>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="i18n.js"></script><script src="nav.js"></script>
+<script>
+  initPage({
+    currentPage: 'resolution-problemes',
+    breadcrumbs: [
+      { key: 'home', href: 'index.html' },
+      { key: 'section5', href: 'pensee-strategique.html' },
+      { key: 'sub5_1', href: 'resolution-problemes.html' }
+    ]
+  });
+</script>
+</body>
+</html>

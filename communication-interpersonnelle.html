@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Communication interpersonnelle – Principes, feedback, écoute active, empathie.">
+  <title>Communication interpersonnelle – Soft Skills</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="site-wrapper">
+  <header class="site-header">
+    <a class="site-logo" href="index.html"><span class="logo-icon">SS</span><span data-i18n="site_title">Soft Skills</span></a>
+    <div class="header-right">
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')">FR</button>
+        <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" data-lang="ar" onclick="setLanguage('ar')">AR</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="main-content">
+      <nav class="breadcrumb" id="breadcrumb"></nav>
+      <section class="section-hero hero-c2">
+        <div class="section-hero-icon">💬</div>
+        <div class="section-hero-body">
+          <div class="section-badge" data-i18n="s2_badge">Étape 2 · Relation</div>
+          <h1 data-i18n="sub2_1">Communication interpersonnelle</h1>
+          <p data-i18n="sub2_1_desc">Principes de communication, cadre de référence, feedback, écoute active, empathie.</p>
+        </div>
+      </section>
+      <div class="block-title" data-i18n="subtopics_title">Sujets couverts</div>
+      <div class="topic-list">
+        <div class="topic-item"><span class="topic-icon ti-c2">📡</span><span class="topic-num">01</span><span data-i18n="l2_1_1">Principes fondamentaux de la communication</span></div>
+        <div class="topic-item"><span class="topic-icon ti-c2">🗺️</span><span class="topic-num">02</span><span data-i18n="l2_1_2">Cadre de référence</span></div>
+        <div class="topic-item"><span class="topic-icon ti-c2">🔁</span><span class="topic-num">03</span><span data-i18n="l2_1_3">Feedback</span></div>
+        <div class="topic-item"><span class="topic-icon ti-c2">🚧</span><span class="topic-num">04</span><span data-i18n="l2_1_4">Freins à la communication</span></div>
+        <div class="topic-item"><span class="topic-icon ti-c2">👂</span><span class="topic-num">05</span><span data-i18n="l2_1_5">Écoute active</span></div>
+        <div class="topic-item"><span class="topic-icon ti-c2">🫂</span><span class="topic-num">06</span><span data-i18n="l2_1_6">Empathie</span></div>
+      </div>
+      <div class="divider"></div>
+      <div class="block-title" data-i18n="related_title">Sujets connexes</div>
+      <div class="related-grid">
+        <a class="related-link" href="communication-relations.html">🤝 <span data-i18n="section2">Communication et relations</span></a>
+        <a class="related-link" href="relations-professionnelles.html">🏢 <span data-i18n="sub2_2">Relations professionnelles</span></a>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="i18n.js"></script><script src="nav.js"></script>
+<script>
+  initPage({
+    currentPage: 'communication-interpersonnelle',
+    breadcrumbs: [
+      { key: 'home', href: 'index.html' },
+      { key: 'section2', href: 'communication-relations.html' },
+      { key: 'sub2_1', href: 'communication-interpersonnelle.html' }
+    ]
+  });
+</script>
+</body>
+</html>
